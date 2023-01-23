@@ -1,4 +1,4 @@
-<?php 
+<?php /*
 require_once("c://xampp/htdocs/RepasoNov/config/db.php");
 $columns = ['idAlumno','codigo','nombre','apellidos','telefono','email','direccion','idNota','idMatriculas'];
 $table = "username";
@@ -28,4 +28,4 @@ if ($num_rows > 0) {
     $html .= '</tr>';
 }
 echo json_encode($html, JSON_UNESCAPED_UNICODE);
-?>
+?>*/

@@ -7,7 +7,8 @@ $rows = $obj->index();
 <div class="mb-3">
     <a href="/RepasoNov/view/username/createNota.php" class="btn btn-primary">Añadir nueva nota</a>
 </div>
-<table class="table">
+<div class="table-responsive">
+<table class="table table-hover">
     <thead>
         <tr>
             <th scope="col">Id nota</th>
@@ -68,6 +69,7 @@ $rows = $obj->index();
     <?php endif; ?>
     </tbody>
 </table>
+</div>
 <?php 
 require_once ("c://xampp/htdocs/RepasoNov/view/head/footerNota.php");
 ?>

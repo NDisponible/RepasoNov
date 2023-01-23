@@ -5,12 +5,10 @@ $obj = new UsernameController();
 $user = $obj->show($_GET['idAlumno']);
 ?>
 <form action="update.php" method="POST" autocomplete="off">
-    <h2>Modificando registro</h2>
-  <div class="mb-3 row">
-    <label for="staticId" class="col-sm-2 col-form-label">Id</label>
-    <div class="col-sm-10">
-      <input type="text" name="idAlumno" readonly class="form-control-plaintext" id="staticId" value="<?= $user[0]?>">
-    </div>
+    <h2>Actualizando registro</h2>
+  <div class="staticId mb-3 row">
+    <label for="staticId" class="col-sm-2 col-form-label">ID <?= $user[0]?>
+  </label>
   </div>
   <div class="mb-3 row">
     <label for="inputCodigo" class="col-sm-2 col-form-label">Codigo alumno</label>

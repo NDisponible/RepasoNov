@@ -31,7 +31,8 @@ $date = $obj->show($_GET['idAlumno']);
   </div>
 </div>
 </div>
-<table class="table container-fluid">
+<div class="table-responsive">
+<table class="table container-fluid table-hover">
     <thead>
         <tr>
             <th scope ="col">Id alumno</th>
@@ -55,6 +56,7 @@ $date = $obj->show($_GET['idAlumno']);
         </tr>
     </tbody>
 </table>
+</div>
 <!--<p><a href="verNotas.php" class="btn btn-primary">Ver las notas</a></p>-->
 <?php 
 require_once ("c://xampp/htdocs/RepasoNov/view/head/footer.php");

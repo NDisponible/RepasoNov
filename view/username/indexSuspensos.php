@@ -5,7 +5,8 @@ $obj = new MatriculasController();
 $rows = $obj->indexSuspensos();
 ?>
 <h2 class="text-center">Alumnos suspensos</h2>
-<table class="table">
+<div class="table-responsive">
+<table class="table table-hover">
     <thead>
         <tr>
             <th scope="col">Codigo alumno</th>
@@ -32,6 +33,7 @@ $rows = $obj->indexSuspensos();
             </tr>
     <?php endif; ?>
     </tbody>
+</div>
 </table>
 <?php 
 require_once ("c://xampp/htdocs/RepasoNov/view/head/footerMatriculas.php");

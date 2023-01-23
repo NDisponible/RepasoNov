@@ -5,7 +5,8 @@ $obj = new MatriculasController();
 $rows = $obj->index();
 ?>
 <h2 class="text-center">Todos los alumnos</h2>
-<table class="table">
+<div class="table-responsive">
+<table class="table table-hover">
     <thead>
         <tr>
             <th scope="col">Codigo alumno</th>
@@ -34,6 +35,7 @@ $rows = $obj->index();
             </tr>
     <?php endif; ?>
     </tbody>
+</div>
 </table>
 <?php 
 require_once ("c://xampp/htdocs/RepasoNov/view/head/footerMatriculas.php");

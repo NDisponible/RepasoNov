@@ -9,31 +9,12 @@ $rows = $obj->index();
     background-color: #2c3e50;
     color: #ffffff !important;
 }
-.main-container{
-    margin: 50px auto;
-    width: 80%;
-}
-.pagination{    
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    text-align: center;
-}
-.pagination li a{
-    border-radius: 5px;
-    color: #000000;
-    display: block;
-    padding: 5px 10px;
-    text-decoration: none;
-}
-.pagination li a:hover{
-    background-color: rgba(0, 0, 0, 0.2);
-}  
 </style>
 <div class="mb-3">
     <a href="/RepasoNov/view/username/create.php" class="btn btn-primary">Añadir nuevo alumno</a>
 </div>
-<table class="table">
+<div class="table-responsive">
+<table class="table table-hover">
     <thead>
         <tr>
             <th scope="col">Id alumno</th>
@@ -58,10 +39,10 @@ $rows = $obj->index();
             <th><?= $row[5]?></th>
             <th><?= $row[6]?></th>
             <th>
-                <a href="show.php?idAlumno=<?= $row[0]?>" class="btn btn-primary">Ver</a>
-                <a href="edit.php?idAlumno=<?= $row[0]?>" class="btn btn-success">Modificar</a>
+                <a href="show.php?idAlumno=<?= $row[0]?>" class="btn btn-primary" title="Ver"><i class="fa-regular fa-eye"></i></a>
+                <a href="edit.php?idAlumno=<?= $row[0]?>" class="btn btn-success" title="Actualizar"><i class="fa-regular fa-pen-to-square"></i></a>
                     <!-- Button trigger modal -->
-    <a href="delete.php?idAlumno" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Eliminar</a>
+    <a href="delete.php?idAlumno" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Eliminar"><i class="fa-regular fa-trash-can"></i></a>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -92,6 +73,19 @@ $rows = $obj->index();
     <?php endif; ?>
     </tbody>
 </table>
+</div>
+<script type="text/javascript">
+  function buscar_ahora(buscar) {
+    var parametros = {"buscar":buscar};
+    $.ajax({
+      data: parametros,
+      type: 'POST',
+      success: function (data) {
+        document.getElementById("datos_buscador").innerHTML = data;
+      }
+    });
+  }
+</script>
 <?php 
 require_once ("c://xampp/htdocs/RepasoNov/view/head/footer.php");  
 ?>
