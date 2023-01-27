@@ -38,10 +38,5 @@ class NotasModel{
         $stament->bindParam(":idNota",$idNota);
         return ($stament->execute()) ? $idNota : false;
     }
-    public function delete($idNota) {
-        $stament = $this->PDO->prepare("DELETE FROM notas WHERE idNota = :idNota");
-        $stament->bindParam(":idNota",$idNota);
-        return ($stament->execute()) ? true : false;
-    }
 }
 ?>

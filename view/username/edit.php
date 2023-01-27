@@ -7,13 +7,12 @@ $user = $obj->show($_GET['idAlumno']);
 <form action="update.php" method="POST" autocomplete="off">
     <h2>Actualizando registro</h2>
   <div class="staticId mb-3 row">
-    <label for="staticId" class="col-sm-2 col-form-label">ID <?= $user[0]?>
-  </label>
+    <label for="staticId" class="col-sm-2 col-form-label">ID <?= $user[0]?></label>
   </div>
   <div class="mb-3 row">
     <label for="inputCodigo" class="col-sm-2 col-form-label">Codigo alumno</label>
     <div class="col-sm-10">
-      <input type="text" name="codigo" class="form-control" id="inputCodigo" value="<?= $user[1]?>">
+      <input type="number" name="codigo" class="form-control" id="inputCodigo" value="<?= $user[1]?>">
     </div>
   </div>
   <div class="mb-3 row">
@@ -31,7 +30,7 @@ $user = $obj->show($_GET['idAlumno']);
   <div class="mb-3 row">
     <label for="inputTelefono" class="col-sm-2 col-form-label">Telefono</label>
     <div class="col-sm-10">
-      <input type="text" name="telefono" class="form-control" id="inputTelefono" value="<?= $user[4]?>">
+      <input type="number" name="telefono" class="form-control" id="inputTelefono" value="<?= $user[4]?>">
     </div>
   </div>
   <div class="mb-3 row">

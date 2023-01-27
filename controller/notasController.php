@@ -18,8 +18,5 @@ class NotasController{
     public function update($idNota,$codigo,$nota1,$nota2,$nota3,$notaFinal,$aprobado,$suspenso) {
         return($this->model->update($idNota,$codigo,$nota1,$nota2,$nota3,$notaFinal,$aprobado,$suspenso) != false) ? header("Location:showNota.php?idNota=".$idNota) : header("Location:indexNota.php");
     }
-    public function delete($idNota) {
-        return ($this->model->delete($idNota)) ? header("Location:indexNota.php") : header("Location:showNota.php?idNota=".$idNota);
-    }
 }
 ?>

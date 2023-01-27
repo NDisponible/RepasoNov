@@ -41,10 +41,7 @@ $rows = $obj->index();
             <th>
                 <a href="show.php?idAlumno=<?= $row[0]?>" class="btn btn-primary" title="Ver"><i class="fa-regular fa-eye"></i></a>
                 <a href="edit.php?idAlumno=<?= $row[0]?>" class="btn btn-success" title="Actualizar"><i class="fa-regular fa-pen-to-square"></i></a>
-                    <!-- Button trigger modal -->
     <a href="delete.php?idAlumno" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Eliminar"><i class="fa-regular fa-trash-can"></i></a>
-
-<!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -58,7 +55,6 @@ $rows = $obj->index();
       <div class="modal-footer">
         <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
         <a href="delete.php?idAlumno=<?= $row[0]?>" class="btn btn-danger">Eliminar</a>
-        <!--<button type="button" class="btn btn-danger">Eliminar</button>-->
       </div>
     </div>
   </div>
@@ -74,18 +70,6 @@ $rows = $obj->index();
     </tbody>
 </table>
 </div>
-<script type="text/javascript">
-  function buscar_ahora(buscar) {
-    var parametros = {"buscar":buscar};
-    $.ajax({
-      data: parametros,
-      type: 'POST',
-      success: function (data) {
-        document.getElementById("datos_buscador").innerHTML = data;
-      }
-    });
-  }
-</script>
 <?php 
 require_once ("c://xampp/htdocs/RepasoNov/view/head/footer.php");  
 ?>

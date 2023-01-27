@@ -6,9 +6,11 @@
     <title><?php 
     echo (empty($_GET['idNota'])) 
     ? ((strpos($_SERVER['REQUEST_URI'],'create')) ? "Añadir nueva nota " :"Index") 
-    : ((strpos($_SERVER['REQUEST_URI'],'show')) ? "Detalle de la nota ".$_GET['idNota'] :"Actualizar nota ".$_GET['idNota']) ;
+    : ((strpos($_SERVER['REQUEST_URI'],'show')) ? "Detalles de la nota ".$_GET['idNota'] :"Actualizar nota ".$_GET['idNota']) ;
     ?></title>
+    <style>.staticId{font-weight: bold;text-align: center;}</style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
   </head>
   <body>
     <div class="container-fluid bg-dark p-2 mb-3">

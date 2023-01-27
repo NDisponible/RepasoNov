@@ -8,10 +8,7 @@ $date = $obj->show($_GET['idAlumno']);
 <div class="pb3">
     <a href="index.php" class="btn btn-primary">Volver</a>
     <a href="edit.php?idAlumno=<?= $date[0]?>" class="btn btn-success">Actualizar</a>
-    <!-- Button trigger modal -->
     <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Eliminar</a>
-
-<!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -25,7 +22,6 @@ $date = $obj->show($_GET['idAlumno']);
       <div class="modal-footer">
         <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
         <a href="delete.php?idAlumno=<?= $date[0]?>" class="btn btn-danger">Eliminar</a>
-        <!--<button type="button" class="btn btn-danger">Eliminar</button>-->
       </div>
     </div>
   </div>
@@ -57,7 +53,6 @@ $date = $obj->show($_GET['idAlumno']);
     </tbody>
 </table>
 </div>
-<!--<p><a href="verNotas.php" class="btn btn-primary">Ver las notas</a></p>-->
 <?php 
 require_once ("c://xampp/htdocs/RepasoNov/view/head/footer.php");
 ?>

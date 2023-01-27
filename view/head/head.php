@@ -33,11 +33,6 @@
         </li>
       </ul>
     </div>
-    <div class="container w-25">
-        <input class="form-control me-2 light-table-filter" type="text" placeholder="Buscar"
-         name="buscar_1" id="buscar_1" onkeyup="buscar_ahora($('buscar_1').val());">
-         <div id="datos_buscador" class="container pl-5 pr-5"></div>
-  </div>
   </div>
 </nav>
 </div>

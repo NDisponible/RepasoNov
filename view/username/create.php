@@ -4,7 +4,7 @@ require_once ("c://xampp/htdocs/RepasoNov/view/head/head.php");
 <form action="store.php" method="POST" autocomplete="off">
 <div class="mb-3">
     <label for="exampleInputCodigo" class="form-label">Codigo</label>
-    <input type="text" name="codigo" required class="form-control" id="exampleInputCodigo" aria-describedby="codigoHelp">
+    <input type="number" name="codigo" required class="form-control" id="exampleInputCodigo" aria-describedby="codigoHelp">
     </div>
   <div class="mb-3">
     <label for="exampleInputNombre" class="form-label">Nombre</label>
@@ -16,7 +16,7 @@ require_once ("c://xampp/htdocs/RepasoNov/view/head/head.php");
   </div>
   <div class="mb-3">
     <label for="exampleInputTelefono" class="form-label">Telefono</label>
-    <input type="text" name="telefono" required class="form-control" id="exampleInputTelefono" aria-describedby="telefonolHelp">
+    <input type="number" name="telefono" required class="form-control" id="exampleInputTelefono" aria-describedby="telefonolHelp">
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email</label>
@@ -28,11 +28,11 @@ require_once ("c://xampp/htdocs/RepasoNov/view/head/head.php");
   </div>
   <div class="mb-3">
     <label for="exampleInputIdNota" class="form-label">Id nota</label>
-    <input type="text" name="idNota" class="form-control" id="exampleInputIdNota" aria-describedby="idNotalHelp">
+    <input type="number" name="idNota" class="form-control" id="exampleInputIdNota" aria-describedby="idNotalHelp">
   </div>
   <div class="mb-3">
     <label for="exampleInputIdMatriculas" class="form-label">Id matriculas</label>
-    <input type="text" name="idMatriculas" class="form-control" id="exampleInputIdMatriculas" aria-describedby="idMatriculaslHelp">
+    <input type="number" name="idMatriculas" class="form-control" id="exampleInputIdMatriculas" aria-describedby="idMatriculaslHelp">
   </div>
   <button type="submit" class="btn btn-primary">Guardar</button>
   <a class="btn btn-danger" href="index.php">Cancelar</a>
