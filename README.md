@@ -1,2 +1,2 @@
 # RepasoNov
-https://github.com/NDisponible/RepasoNov.git
+La gestion de un colegio con php mvc
